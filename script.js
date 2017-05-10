@@ -1,16 +1,8 @@
-var a = 5;
-var b = 3;
-var triangleArea = (a*a) + (2*a*b) - (b*b);
+var a = prompt("Podaj a");
+var b = prompt("Podaj b");
+var value = (a * a) + (2 * a * b) - (b * b);
 
-console.log(triangleArea);
-
-if (triangleArea % 2 == 0)
-	console.log("Parzysta");
+if (value < 0) 
+	console.log("wynik ujemny");
 else
-	console.log("Nieparzysta");
-
-
-if (triangleArea == 0)
-	console.log("Równy zero");
-else
-	console.log("Nie równy zero");
+	console.log("wynik dodatni");
